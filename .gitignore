@@ -1,0 +1,14 @@
+# Design files
+*.sketch
+*.fig
+*.xd
+
+.DS_Store
+.prettierignore
+
+# SASS generated files
+*.map
+
+# npm generated files
+node_modules/
+package* 

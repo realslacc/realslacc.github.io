@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="dist/css/main.css">
+    <link rel="shortcut icon" href="assets/img/favicon-animated.gif" type="image/x-icon">
+    <title>slack's epic gamer site</title>
+</head>
+<body>
+    <main>
+        <div class="container container-large">
+            <h1>hihii</h1>
+            <img src="assets/img/cat.gif" alt="cat gif" id="cat-gif" height="60px" width="auto"> <!-- ADD SIZE -->
+            <p>
+                Hello!! I’m an artist and photographer from New Zealand. I go by <b>he/him</b> and I love tramping, video games, and technology. 
+                I’m currently studying web design and development. This site was originally built for the purpose of hosting my other smaller projects
+                but now I just keep working on it because I enjoy making stuff.
+            </p>
+            <small>I dunno what else to put here lel</small>
+            <div class="socials">
+                <a href="https://www.tumblr.com/mhen-photography" target="_blank">
+                    <img src="assets/img/tumblr-icon.svg" alt="tumblr icon" height="45px" width="auto">
+                </a>
+                <a href="https://www.instagram.com/realslacc/" target="_blank">
+                    <img src="assets/img/insta-icon.svg" alt="insta icon" height="70px" width="auto">
+                </a>
+                <a href="https://bsky.app/profile/did:plc:d3h6i2cn6dbti45gthittria" target="_blank">
+                    <img src="assets/img/bsky-icon.svg" alt="bsky icon" height="45px" width="auto">
+                </a>  
+            </div>
+        </div>
+        <h2 id="highlighted-h2">Some stuff I've done!!</h2>
+        <div class="grid">
+            <div class="container container-small">
+                <h2 id="highlighted-h2">Blog!!</h2>
+                <div class="blog-container">
+                    <h3 id="hold-status">Fetching post data! Hold on...</h3>
+                </div>
+            </div>
+            <div class="container container-small">
+                <img src="https://raw.githubusercontent.com/slackwaree/cute-difficulty-faces/refs/heads/main/previews/v2/pack.png" 
+                alt="pack icon" id="pack-icon">
+                <h2>Cute Difficulty Faces</h2>
+                <p>
+                    A texture pack for Geometry Dash that Kawaii-ifies the existing difficulty faces, with support for 
+                    More Difficulties by Uproxide. You can download the latest release
+                    <a href="https://github.com/slackwaree/cute-difficulty-faces/releases/latest/download/cute-difficulty-faces.zip">here</a>!
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="assets/img/slacksitting.webp" id="oc-art" alt="oc art">
+        <h3 id="clock-widget">ⓘ It is currently <span id="current-time"></span> on a <span id="current-day"></span> for me</h3>
+    </footer>
+    <script type="module" src="src/js/clock-widget.js"></script>
+    <script type="module" src="src/js/blog.js"></script>
+    <script src="vendor/oneko/oneko.js" data-cat="vendor/oneko/oneko.gif"></script>
+</body>
+</html>
