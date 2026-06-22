@@ -1,5 +1,5 @@
 const btns = document.querySelectorAll('button');
-if (!localStorage.getItem('enable-updates') {
+if (!localStorage.getItem('enable-updates')) {
     localStorage.setItem('enable-updates', null);
 }
 btns.forEach(btn => {
