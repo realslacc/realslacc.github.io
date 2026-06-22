@@ -1,6 +1,7 @@
 const btns = document.querySelectorAll('button');
-localStorage.setItem('enable-updates', null);
-
+if (!localStorage.getItem('enable-updates') {
+    localStorage.setItem('enable-updates', null);
+}
 btns.forEach(btn => {
     btn.addEventListener('click', () => {
         if (btn.value == 'enable-updates') {
