@@ -1,5 +1,13 @@
 import { marked } from 'https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js';
 
+window.addEventListener('load', () => {
+    if (localStorage.getItem('enable-updates') == true || !localStorage.getItem('enable-updates')) {
+        if (localStorage.getItem('current-update') != 0) { // hardcoded
+            window.location.href = './dialog.html'
+        }
+    }
+});
+
 let postsArray = [];
 let postNum = 1;
 window.addEventListener('load', loadPost(postNum++));

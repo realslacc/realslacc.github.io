@@ -1,5 +1,35 @@
 @use 'base' as *;
 
+dialog {
+	margin-top: -1rem;
+	padding: 2rem;
+	background-color: black;
+	border: 2px solid yellow;
+	h1, h2, p {
+		color: yellow;
+	}
+	p {
+		margin: 1rem 0;
+	}
+	img {
+		width: 100%;
+	}
+	hr {
+		border: 1px solid white;
+		margin: 1rem;
+	}
+	a {
+		margin: 1rem;
+		margin-bottom: 0;
+		display: block;
+		color: yellow;
+		font-size: 2rem;
+	}
+	blockquote {
+		font-style: italic;
+		color: white;
+	}
+}
 .container {
 	border-left: 10px solid #f8a9ff;
 	border-right: 10px solid #f8a9ff;
