@@ -1,7 +1,7 @@
 import { marked } from 'https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js';
 
 window.addEventListener('load', () => {
-    if (localStorage.getItem('enable-updates') == true || ) {
+    if (localStorage.getItem('enable-updates') == 'true' || ) {
         if (localStorage.getItem('current-update') != 0) { // hardcoded
             window.location.href = 'https://realslacc.github.io/dialog.html'
         }
@@ -9,8 +9,6 @@ window.addEventListener('load', () => {
     else if (localStorage.getItem('enable-updates') == 'null') {
         window.location.href = 'https://realslacc.github.io/dialog.html'
     }
-    else {
-        return;
 });
 
 let postsArray = [];
