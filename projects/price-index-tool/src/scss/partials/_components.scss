@@ -1,0 +1,62 @@
+@use 'base' as *;
+
+.white-box {
+    user-select: none;
+    padding: 1rem;
+    background-color: white;
+    border-radius: $border-radius-def;
+    font-size: 2rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+    &:hover {
+        background-color: $bg-color-hover;
+        cursor: pointer;
+    }
+}
+span#note {
+    margin: 0 5rem;
+    color: grey;
+}
+span#new-product {
+    border-radius: 0 0 $border-radius-def 0;
+    &:hover {
+        padding: 1.5rem;
+    }
+}
+.popup-container {
+    form {
+        background-color: white;
+        padding: 1rem;
+        border-radius: $border-radius-def;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        input, select {
+            background-color: white;
+            border-radius: inherit;
+            padding: 0 1rem;
+            &:hover {
+                background-color: $bg-color-hover;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.item {
+    .product-quantity {
+        transform: rotate(-90deg);
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+    .divider {
+        width: 1px;
+        height: 100%;
+        background-color: rgb(202, 202, 202);
+    }
+}
+.search-box-container {
+    font-size: 4rem;
+}
+#search-box {
+    font-size: inherit;
+    text-align: inherit;
+    border-radius: $border-radius-def $border-radius-def 0 0;
+    border: 0;
+}
