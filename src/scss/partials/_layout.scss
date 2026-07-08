@@ -24,6 +24,22 @@ body {
     margin: 0 auto;
     gap: 1rem;
 }
+dialog {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 600px;
+        img {
+            width: 100%;
+        }
+    }
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+	// justify-content: center;
+    align-items: center;
+}
 @media only screen and (min-width: 768px) { // Desktop styles
     .grid {
         grid-template-columns: 1fr 1fr;
