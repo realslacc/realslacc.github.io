@@ -2,16 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="dist/style.css">
-    <title>price-index-tool</title>
+    <title>Price Index Tool</title>
   </head>
   <body>
     <script type="module" src="/src/main.js"></script>
     <script type="module" src="/src/js/db.js"></script>
+    <script type="module" src="/src/js/data.js"></script>
     <main>
       <span id="note">* An item with a price attached overrides it's base price</span>
+      <div class="container">
+        <input type="button" value="Download data" id="download-data-btn">
+        <input type="button" value="Upload data" id="upload-data-btn">
+      </div>
       <div id="app"></div>
     </main>
   </body>
