@@ -2,10 +2,10 @@
 <style lang="scss" src="../src/scss/main.scss" />
 <script setup>
   import Form from './components/Form.vue'
-  import HelloWorld from './components/HelloWorld.vue'
+  import Items from './components/Items.vue'
 </script>
 
 <template>
   <Form />
-  <HelloWorld />
+  <Items />
 </template>
