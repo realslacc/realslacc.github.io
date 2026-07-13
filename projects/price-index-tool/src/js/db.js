@@ -1,4 +1,9 @@
 let storedProducts;
+let toAppend = {
+    id: 0, 
+    name: 'Test Item', 
+    price: 3.00, 
+    quantity: 'EA'};
 
 // Create if not exists
 if (!localStorage.getItem('products')) {
@@ -6,17 +11,17 @@ if (!localStorage.getItem('products')) {
 }
 
 export class NewProduct {
-    constructor(name, price, quantity) {
-        this.name = name;
-        this.price = price;
-        this.quantity = quantity;
+    constructor(productName, productPrice, productQuantity) {
+        this.productName = productName;
+        this.productPrice = productPrice;
+        this.productQuantity = productQuantity;
     }
     method() {
-        const toAppend = {
+        toAppend = {
             id: JSON.parse(localStorage.getItem('products').length),
-            name: this.name,
-            price: this.price,
-            quantity: this.quantity
+            name: this.productName,
+            price: this.productPrice,
+            quantity: this.productQuantity
         }
 
         const products = JSON.parse(localStorage.getItem('products')) || [];
